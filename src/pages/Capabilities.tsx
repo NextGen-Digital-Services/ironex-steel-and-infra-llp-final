@@ -55,7 +55,7 @@ export default function Capabilities() {
       {/* ==========================================
           PILLAR 01: SITE TRANSFORMATION
           ========================================== */}
-      <section id="site-transformation" className="py-24 bg-white border-b border-gray-150 scroll-mt-20">
+      <section id="site-transformation" className="py-24 bg-bg-light border-b border-gray-150 scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           {/* Pillar Header */}
@@ -83,7 +83,7 @@ export default function Capabilities() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 text-left">
             
             {/* Category 1: Demolition & Dismantling */}
-            <div className="space-y-6 bg-[#F7F8FA] p-8 rounded-xl border border-gray-200/50 flex flex-col justify-between">
+            <div className="space-y-6 bg-bg-alt p-8 rounded-xl border border-gray-200/50 flex flex-col justify-between">
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
                   <div className="bg-primary text-secondary p-3 rounded-xl shadow-xs">
@@ -134,7 +134,7 @@ export default function Capabilities() {
             </div>
 
             {/* Category 2: Industrial Scrap Management */}
-            <div className="space-y-6 bg-[#F7F8FA] p-8 rounded-xl border border-gray-200/50 flex flex-col justify-between">
+            <div className="space-y-6 bg-bg-alt p-8 rounded-xl border border-gray-200/50 flex flex-col justify-between">
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
                   <div className="bg-primary text-secondary p-3 rounded-xl shadow-xs">
@@ -202,7 +202,7 @@ export default function Capabilities() {
       {/* ==========================================
           PILLAR 02: PROJECT MATERIALS
           ========================================== */}
-      <section id="project-materials" className="py-24 bg-[#F7F8FA] border-b border-gray-150 scroll-mt-20">
+      <section id="project-materials" className="py-24 bg-bg-alt border-b border-gray-150 scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           {/* Pillar Header */}
@@ -230,7 +230,7 @@ export default function Capabilities() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 text-left mb-16">
             
             {/* Category 1: Iron, Steel Supply */}
-            <div className="space-y-4 bg-white p-8 rounded-xl border border-gray-100 shadow-xs">
+            <div className="space-y-4 bg-bg-light p-8 rounded-xl border border-gray-100 shadow-xs">
               <h3 className="text-lg font-bold text-primary">Iron, Steel & Building Material Supply</h3>
               <span className="text-[10px] text-gray-400 font-bold uppercase tracking-wider block -mt-1">Project-Ready Materials. Dependable Supply.</span>
               <p className="text-xs text-gray-500 font-body leading-relaxed pt-2">
@@ -242,7 +242,7 @@ export default function Capabilities() {
             </div>
 
             {/* Category 2: Scaffolding access solutions */}
-            <div className="space-y-4 bg-white p-8 rounded-xl border border-gray-100 shadow-xs">
+            <div className="space-y-4 bg-bg-light p-8 rounded-xl border border-gray-100 shadow-xs">
               <h3 className="text-lg font-bold text-primary">Scaffolding, Formwork & Access Solutions</h3>
               <span className="text-[10px] text-gray-400 font-bold uppercase tracking-wider block -mt-1">Reliable Access. Continuous Progress.</span>
               <p className="text-xs text-gray-500 font-body leading-relaxed pt-2">
@@ -264,7 +264,7 @@ export default function Capabilities() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               
               {/* Product 1 */}
-              <div className="bg-white rounded-xl overflow-hidden border border-gray-100 shadow-xs flex flex-col justify-between h-72">
+              <div className="bg-bg-light rounded-xl overflow-hidden border border-gray-100 shadow-xs flex flex-col justify-between h-72">
                 <div className="h-32 bg-primary">
                   <img src={scaffoldingImg} alt="Cuplock systems" className="w-full h-full object-cover" />
                 </div>
@@ -276,7 +276,7 @@ export default function Capabilities() {
               </div>
 
               {/* Product 2 */}
-              <div className="bg-white rounded-xl overflow-hidden border border-gray-100 shadow-xs flex flex-col justify-between h-72">
+              <div className="bg-bg-light rounded-xl overflow-hidden border border-gray-100 shadow-xs flex flex-col justify-between h-72">
                 <div className="h-32 bg-primary">
                   <img src={projectImg} alt="Structural steel plates" className="w-full h-full object-cover" />
                 </div>
@@ -288,7 +288,7 @@ export default function Capabilities() {
               </div>
 
               {/* Product 3 */}
-              <div className="bg-white rounded-xl overflow-hidden border border-gray-100 shadow-xs flex flex-col justify-between h-72">
+              <div className="bg-bg-light rounded-xl overflow-hidden border border-gray-100 shadow-xs flex flex-col justify-between h-72">
                 <div className="h-32 bg-primary">
                   <img src={scaffoldingImg} alt="Adjustable Props" className="w-full h-full object-cover" />
                 </div>
@@ -300,7 +300,7 @@ export default function Capabilities() {
               </div>
 
               {/* Product 4 */}
-              <div className="bg-white rounded-xl overflow-hidden border border-gray-100 shadow-xs flex flex-col justify-between h-72">
+              <div className="bg-bg-light rounded-xl overflow-hidden border border-gray-100 shadow-xs flex flex-col justify-between h-72">
                 <div className="h-32 bg-primary">
                   <img src={pebImg} alt="Structural pipes" className="w-full h-full object-cover" />
                 </div>
@@ -330,7 +330,7 @@ export default function Capabilities() {
       {/* ==========================================
           PILLAR 03: STEEL ENGINEERING
           ========================================== */}
-      <section id="steel-engineering" className="py-24 bg-white scroll-mt-20">
+      <section id="steel-engineering" className="py-24 bg-bg-light scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           {/* Pillar Header */}

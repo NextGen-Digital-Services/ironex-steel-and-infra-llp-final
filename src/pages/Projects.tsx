@@ -170,7 +170,7 @@ export default function Projects() {
       </section>
 
       {/* Filter Menu */}
-      <section className="py-12 bg-white border-b border-gray-100">
+      <section className="py-12 bg-bg-light border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap justify-center gap-3">
           {categories.map((cat) => (
             <button
@@ -179,7 +179,7 @@ export default function Projects() {
               className={`text-xs font-bold uppercase tracking-wider px-5 py-2.5 rounded-xl border transition-all duration-300 ${
                 filter === cat
                   ? 'bg-secondary border-secondary text-white shadow-sm'
-                  : 'bg-white border-gray-200 text-primary hover:border-primary hover:text-secondary'
+                  : 'bg-bg-light border-gray-200 text-primary hover:border-primary hover:text-secondary'
               }`}
             >
               {cat}
@@ -189,7 +189,7 @@ export default function Projects() {
       </section>
 
       {/* Projects Grid */}
-      <section className="py-20">
+      <section className="py-20 bg-bg-alt">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredProjects.map((proj, idx) => (

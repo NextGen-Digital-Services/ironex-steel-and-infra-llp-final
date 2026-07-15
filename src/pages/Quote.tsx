@@ -82,12 +82,12 @@ export default function Quote() {
       </section>
 
       {/* Quote Form & Timeline */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-bg-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start text-left">
             
             {/* Left: Request Form */}
-            <div className="lg:col-span-7 bg-[#F7F8FA] p-8 rounded-xl border border-gray-250/50 shadow-xs">
+            <div className="lg:col-span-7 bg-bg-alt p-8 rounded-xl border border-gray-250/50 shadow-xs">
               <h2 className="text-xl font-bold text-primary mb-6">Industrial Project Inquiry Form</h2>
               
               {submitted ? (
@@ -283,7 +283,7 @@ export default function Quote() {
               </div>
 
               {/* Quality & safety commitment badge */}
-              <div className="p-6 bg-[#F7F8FA] rounded-xl border border-gray-200/50 flex gap-4 items-start text-left">
+              <div className="p-6 bg-bg-alt rounded-xl border border-gray-200/50 flex gap-4 items-start text-left">
                 <div className="bg-primary text-secondary p-3 rounded-xl shadow-xs shrink-0 mt-1">
                   <ShieldCheck size={20} />
                 </div>

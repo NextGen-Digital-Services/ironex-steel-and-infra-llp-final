@@ -38,7 +38,7 @@ export default function Clients() {
       </section>
 
       {/* Corporate Partnership Profile */}
-      <section className="py-24 bg-white text-left">
+      <section className="py-24 bg-bg-light text-left">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
             
@@ -66,7 +66,7 @@ export default function Clients() {
                 <img src={pebImg} alt="PEB Construction site" className="w-full aspect-[4/3] object-cover" />
               </div>
               
-              <div className="p-6 bg-[#F7F8FA] rounded-xl border border-gray-200 space-y-4">
+              <div className="p-6 bg-bg-alt rounded-xl border border-gray-205 space-y-4">
                 <h4 className="text-xs font-bold text-primary uppercase tracking-widest flex items-center gap-2">
                   <Handshake className="text-secondary" size={16} />
                   Cooperation Guidelines
@@ -94,7 +94,7 @@ export default function Clients() {
       </section>
 
       {/* Grayscale Client Logos Section */}
-      <section className="py-24 bg-[#F7F8FA] border-y border-gray-200/60">
+      <section className="py-24 bg-bg-alt border-y border-gray-200/60">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-12">
           
           <div className="space-y-3 max-w-2xl mx-auto">
@@ -121,7 +121,7 @@ export default function Clients() {
       </section>
 
       {/* Long-term partnerships CTA */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-bg-light">
         <div className="max-w-4xl mx-auto px-4 text-center space-y-6">
           <h2 className="text-2xl font-extrabold text-primary">Establish a Reliable Vendor Channel</h2>
           <p className="text-xs text-gray-500 font-body leading-relaxed max-w-2xl mx-auto">

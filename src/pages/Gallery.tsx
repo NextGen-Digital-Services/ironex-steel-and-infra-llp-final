@@ -80,7 +80,7 @@ export default function Gallery() {
       </section>
 
       {/* Filter Menu */}
-      <section className="py-12 bg-white border-b border-gray-150">
+      <section className="py-12 bg-bg-light border-b border-gray-155">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap justify-center gap-2">
           {categories.map((cat) => (
             <button
@@ -89,7 +89,7 @@ export default function Gallery() {
               className={`text-[10px] font-bold uppercase tracking-wider px-4 py-2.5 rounded-xl border transition-all duration-300 ${
                 filter === cat
                   ? 'bg-secondary border-secondary text-white shadow-sm'
-                  : 'bg-white border-gray-200 text-primary hover:border-primary hover:text-secondary'
+                  : 'bg-bg-light border-gray-200 text-primary hover:border-primary hover:text-secondary'
               }`}
             >
               {cat}
@@ -99,7 +99,7 @@ export default function Gallery() {
       </section>
 
       {/* Gallery Masonry-like Grid */}
-      <section className="py-20">
+      <section className="py-20 bg-bg-alt">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {filteredImages.map((image, idx) => (

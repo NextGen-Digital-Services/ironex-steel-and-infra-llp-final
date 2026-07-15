@@ -99,7 +99,7 @@ export default function Contact() {
       </section>
 
       {/* Office Locations & Contact form */}
-      <section className="py-24 bg-white text-left">
+      <section className="py-24 bg-bg-light text-left">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
             
@@ -117,7 +117,7 @@ export default function Contact() {
               {/* Office details */}
               <div className="space-y-8">
                 {offices.map((office, idx) => (
-                  <div key={idx} className="p-6 bg-[#F7F8FA] rounded-xl border border-gray-250/30 space-y-4 shadow-xs">
+                  <div key={idx} className="p-6 bg-bg-alt rounded-xl border border-gray-255/30 space-y-4 shadow-xs">
                     <div>
                       <span className="text-[10px] font-bold text-secondary uppercase tracking-widest block">{office.type}</span>
                       <h3 className="text-sm font-bold text-primary">{office.city}</h3>
@@ -169,7 +169,7 @@ export default function Contact() {
             </div>
 
             {/* Right Column: Contact form */}
-            <div className="lg:col-span-7 bg-[#F7F8FA] p-8 rounded-xl border border-gray-250/50 shadow-xs">
+            <div className="lg:col-span-7 bg-bg-alt p-8 rounded-xl border border-gray-250/50 shadow-xs">
               <h3 className="text-lg font-bold text-primary mb-6">Send an Inquiry</h3>
               
               {submitted ? (
@@ -263,7 +263,7 @@ export default function Contact() {
       </section>
 
       {/* Interactive-looking Google Map Mockup */}
-      <section className="py-12 bg-[#F7F8FA] border-y border-gray-200">
+      <section className="py-12 bg-bg-alt border-y border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white p-6 rounded-xl border border-gray-250/40 shadow-xs space-y-4 text-left">
             <span className="text-xs font-bold uppercase tracking-widest text-secondary block font-heading">Interactive Map</span>
@@ -291,7 +291,7 @@ export default function Contact() {
       </section>
 
       {/* FAQs Collapsible section */}
-      <section className="py-24 bg-white text-left">
+      <section className="py-24 bg-bg-light text-left">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           
           <div className="text-center space-y-3 max-w-2xl mx-auto">
@@ -304,7 +304,7 @@ export default function Contact() {
             {faqs.map((faq, idx) => (
               <div 
                 key={idx} 
-                className="bg-[#F7F8FA] rounded-xl border border-gray-250/30 overflow-hidden transition-all duration-300"
+                className="bg-bg-alt rounded-xl border border-gray-250/30 overflow-hidden transition-all duration-300"
               >
                 <button
                   onClick={() => handleFaqToggle(idx)}
