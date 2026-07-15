@@ -19,17 +19,17 @@ interface ServiceCardProps {
 
 export default function ServiceCard({ image, title, description, path, icon, categories, buttonText }: ServiceCardProps) {
   return (
-    <div className="bg-white rounded-xl border border-gray-100 overflow-hidden flex flex-col h-full group service-card-hover">
+    <div className="bg-[#FCFAF7] hover:bg-white rounded-xl border border-gray-100 hover:border-secondary/40 border-t-2 border-t-transparent hover:border-t-secondary overflow-hidden flex flex-col h-full group cursor-pointer transition-all duration-300 ease-out hover:-translate-y-2.5 hover:scale-[1.03] shadow-md hover:shadow-2xl hover:shadow-secondary/15">
       {/* Card Image Container */}
-      <div className="relative h-52 overflow-hidden shrink-0 bg-primary">
+      <div className="relative h-[270px] overflow-hidden shrink-0 bg-primary">
         <img
           src={image}
           alt={title}
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          className="w-full h-full object-cover transition-all duration-300 ease-out group-hover:scale-108 group-hover:brightness-105"
           loading="lazy"
         />
         {/* Subtle Dark Overlay */}
-        <div className="absolute inset-0 bg-primary bg-opacity-20 group-hover:bg-opacity-35 transition-all duration-300" />
+        <div className="absolute inset-0 bg-primary/5 group-hover:bg-primary/0 transition-all duration-300 ease-out" />
         
         {/* Service Icon Badge */}
         <div className="absolute bottom-4 left-4 bg-white text-secondary p-1.5 rounded-lg shadow-md border border-gray-50 flex items-center justify-center">
@@ -80,7 +80,7 @@ export default function ServiceCard({ image, title, description, path, icon, cat
           className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-primary group-hover:text-secondary transition-colors mt-3.5 mt-auto focus:outline-none pt-2 border-t border-gray-100"
         >
           <span>{buttonText || 'Read More'}</span>
-          <ArrowUpRight size={14} className="transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+          <ArrowUpRight size={14} className="transition-transform duration-300 ease-out group-hover:translate-x-1.5 group-hover:-translate-y-0.5" />
         </Link>
       </div>
     </div>

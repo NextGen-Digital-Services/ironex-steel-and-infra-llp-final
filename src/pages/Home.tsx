@@ -27,14 +27,17 @@ import { useModal } from '../context/ModalContext';
 
 // Asset Imports (resolves via Vite bundle)
 import heroImg from '../assets/industrial_hero.jpg';
-import factoryImg from '../assets/about_factory.jpg';
 import pebImg from '../assets/peb_construction.jpg';
 import heroBgImg from '../assets/images/heroimg/heroimg1_result.webp';
 import heroCardImg from '../assets/images/heroimg/heroimg2_result.webp';
+import aboutImg from '../assets/images/cardimg101_result.webp';
 import projectImg from '../assets/industrial_project.jpg';
 import demolitionImg from '../assets/demolition.jpg';
 import scaffoldingImg from '../assets/scaffolding.jpg';
 import scrapImg from '../assets/scrap_processing.jpg';
+import card1Img from '../assets/images/Card1stimg/Card1_result.webp';
+import card2Img from '../assets/images/Card2ndimg/card2_result.webp';
+import card3Img from '../assets/images/Card3rdimg/card3_result.webp';
 
 export default function Home() {
   const { setIsQuoteOpen } = useModal();
@@ -45,7 +48,7 @@ export default function Home() {
     {
       title: 'Site Transformation & Resource Management',
       description: 'Everything required to safely transform an existing industrial site through demolition, dismantling and professional material recovery.',
-      image: demolitionImg,
+      image: card1Img,
       path: '/services#site-transformation',
       icon: <Wrench size={20} />,
       categories: [
@@ -72,7 +75,7 @@ export default function Home() {
     {
       title: 'Project Materials & Access Systems',
       description: 'Reliable supply of structural materials and temporary access systems to keep industrial and infrastructure projects moving efficiently.',
-      image: scaffoldingImg,
+      image: card2Img,
       path: '/services#project-materials',
       icon: <Layers size={20} />,
       categories: [
@@ -99,7 +102,7 @@ export default function Home() {
     {
       title: 'Steel Engineering & Construction Execution',
       description: 'End-to-end engineering solutions covering fabrication, construction, structural execution and industrial project support.',
-      image: heroImg,
+      image: card3Img,
       path: '/services#steel-engineering',
       icon: <Building size={20} />,
       categories: [
@@ -352,17 +355,16 @@ export default function Home() {
       {/* 3. ABOUT SECTION */}
       <section className="py-24 bg-[#F6F2EC] border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
             
             {/* Left: Factory Image */}
             <div className="lg:col-span-5">
-              <div className="relative rounded-xl overflow-hidden shadow-lg border border-gray-100 bg-white">
+              <div className="relative rounded-xl overflow-hidden shadow-lg hover:shadow-xl border border-gray-100 bg-white h-[450px] sm:h-[550px] lg:h-[600px] transition-shadow duration-300 group">
                 <img 
-                  src={factoryImg} 
+                  src={aboutImg} 
                   alt="IRONEX Steel & Infra Manufacturing Facility Ahmedabad" 
-                  className="w-full object-cover aspect-[4/3]"
+                  className="w-full h-full object-cover group-hover:scale-103 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-primary bg-opacity-10" />
               </div>
             </div>
 
@@ -380,19 +382,19 @@ export default function Home() {
 
               {/* Mission, Vision, Values Grid */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
-                <div className="bg-white p-5 rounded-xl border border-gray-200/60 shadow-xs">
+                <div className="bg-white p-5 rounded-xl border border-gray-200/60 border-t-2 border-t-transparent hover:border-t-secondary hover:-translate-y-1.5 hover:shadow-md hover:shadow-secondary/10 transition-all duration-300">
                   <h4 className="text-sm font-bold uppercase text-secondary mb-2">Our Mission</h4>
                   <p className="text-xs text-gray-500 leading-relaxed">
                     To deliver reliable, high-integrity structural steel and PEB frameworks using modern, certified engineering processes.
                   </p>
                 </div>
-                <div className="bg-white p-5 rounded-xl border border-gray-200/60 shadow-xs">
+                <div className="bg-white p-5 rounded-xl border border-gray-200/60 border-t-2 border-t-transparent hover:border-t-secondary hover:-translate-y-1.5 hover:shadow-md hover:shadow-secondary/10 transition-all duration-300">
                   <h4 className="text-sm font-bold uppercase text-secondary mb-2">Our Vision</h4>
                   <p className="text-xs text-gray-500 leading-relaxed">
                     To serve as India's premier, go-to heavy fabrication and infrastructure partner for critical industrial complexes.
                   </p>
                 </div>
-                <div className="bg-white p-5 rounded-xl border border-gray-200/60 shadow-xs">
+                <div className="bg-white p-5 rounded-xl border border-gray-200/60 border-t-2 border-t-transparent hover:border-t-secondary hover:-translate-y-1.5 hover:shadow-md hover:shadow-secondary/10 transition-all duration-300">
                   <h4 className="text-sm font-bold uppercase text-secondary mb-2">Core Values</h4>
                   <p className="text-xs text-gray-500 leading-relaxed">
                     Precision engineering, strict safety protocols, absolute material transparency, and long-term client trust.
