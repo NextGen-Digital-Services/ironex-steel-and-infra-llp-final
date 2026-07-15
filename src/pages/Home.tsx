@@ -241,7 +241,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="bg-bg-light">
+    <div className="bg-[#F6F2EC]">
       
       {/* 1. HERO SECTION */}
       <section className="relative min-h-[90vh] lg:min-h-screen flex items-center bg-primary overflow-hidden">
@@ -311,7 +311,7 @@ export default function Home() {
       <TrustStats />
 
       {/* 2B. OUR TOP CLIENTS */}
-      <section className="py-16 bg-white border-b border-gray-100 overflow-hidden">
+      <section className="py-16 bg-[#EEF3F8] border-b border-gray-100 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10 text-center space-y-3">
           <span className="text-xs font-bold uppercase tracking-widest text-secondary block">Trusted By Industry Leaders</span>
           <h2 className="text-2xl lg:text-3xl font-extrabold text-primary tracking-tight">
@@ -322,7 +322,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="relative w-full overflow-hidden py-6 bg-[#F7F8FA] border-y border-gray-200/50 flex items-center">
+        <div className="relative w-full overflow-hidden py-6 bg-[#F6F2EC] border-y border-gray-200/50 flex items-center">
           <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none hidden sm:block" />
           <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none hidden sm:block" />
           
@@ -348,7 +348,7 @@ export default function Home() {
       </section>
 
       {/* 3. ABOUT SECTION */}
-      <section className="py-24 bg-[#F7F8FA] border-b border-gray-100">
+      <section className="py-24 bg-[#F6F2EC] border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
             
@@ -425,7 +425,7 @@ export default function Home() {
       </section>
 
       {/* 4. CAPABILITIES SECTION */}
-      <section className="py-24 bg-white border-b border-gray-100" id="services">
+      <section className="py-24 bg-[#EEF3F8] border-b border-gray-100" id="services">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
@@ -453,7 +453,7 @@ export default function Home() {
       </section>
 
       {/* 5. FEATURED PROJECTS */}
-      <section className="py-24 bg-[#F7F8FA] border-b border-gray-100">
+      <section className="py-24 bg-[#F6F2EC] border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
@@ -489,7 +489,7 @@ export default function Home() {
       </section>
 
       {/* 6. INDUSTRIES WE SERVE */}
-      <section className="py-24 bg-white border-b border-gray-100">
+      <section className="py-24 bg-[#EEF3F8] border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">
@@ -502,7 +502,7 @@ export default function Home() {
             {industries.map((ind, index) => (
               <div 
                 key={index} 
-                className="bg-[#F7F8FA] border border-gray-200/60 p-6 rounded-xl hover:border-secondary hover:shadow-xs transition-all duration-300 text-left group"
+                className="bg-[#F6F2EC] border border-gray-200/60 p-6 rounded-xl hover:border-secondary hover:shadow-xs transition-all duration-300 text-left group"
               >
                 <div className="text-primary group-hover:text-secondary transition-colors mb-4 shrink-0">
                   {ind.icon}
@@ -518,7 +518,7 @@ export default function Home() {
       </section>
 
       {/* 7. WHY CHOOSE US */}
-      <section className="py-24 bg-[#F7F8FA] border-b border-gray-100">
+      <section className="py-24 bg-[#F6F2EC] border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
             
@@ -547,7 +547,7 @@ export default function Home() {
                 {whyChooseUsPoints.map((point, index) => (
                   <div key={index} className="relative">
                     {/* Circle Node */}
-                    <div className="absolute -left-[31px] top-1 bg-[#F7F8FA] border-2 border-secondary w-[10px] h-[10px] rounded-full" />
+                    <div className="absolute -left-[31px] top-1 bg-[#F6F2EC] border-2 border-secondary w-[10px] h-[10px] rounded-full" />
                     
                     <h3 className="text-base font-bold text-primary mb-1">
                       {point.title}
@@ -566,7 +566,7 @@ export default function Home() {
       </section>
 
       {/* 8. WORKING PROCESS */}
-      <section className="py-24 bg-white border-b border-gray-100">
+      <section className="py-24 bg-[#EEF3F8] border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">
@@ -583,7 +583,7 @@ export default function Home() {
             {steps.map((st, index) => (
               <div 
                 key={index} 
-                className="bg-[#F7F8FA] border border-gray-200/50 p-6 rounded-xl relative z-10 text-left hover:border-secondary hover:shadow-xs transition-all duration-300"
+                className="bg-[#F6F2EC] border border-gray-200/50 p-6 rounded-xl relative z-10 text-left hover:border-secondary hover:shadow-xs transition-all duration-300"
               >
                 {/* Step circle */}
                 <div className="w-10 h-10 rounded-full bg-primary text-white border-2 border-white flex items-center justify-center font-bold text-xs shadow-sm mb-4">
@@ -600,7 +600,7 @@ export default function Home() {
       </section>
 
       {/* 9. GALLERY SECTION */}
-      <section className="py-24 bg-[#F7F8FA] border-b border-gray-100">
+      <section className="py-24 bg-[#F6F2EC] border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">
@@ -638,7 +638,7 @@ export default function Home() {
       </section>
 
       {/* 10. TESTIMONIALS SECTION */}
-      <section className="py-24 bg-white border-b border-gray-100">
+      <section className="py-24 bg-[#EEF3F8] border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">
@@ -651,7 +651,7 @@ export default function Home() {
             {testimonials.map((test, index) => (
               <div 
                 key={index} 
-                className="bg-[#F7F8FA] border border-gray-200/50 p-8 rounded-xl text-left flex flex-col justify-between hover:shadow-xs transition-shadow duration-300"
+                className="bg-[#F6F2EC] border border-gray-200/50 p-8 rounded-xl text-left flex flex-col justify-between hover:shadow-xs transition-shadow duration-300"
               >
                 <div className="space-y-4">
                   {/* Rating Stars */}
@@ -720,7 +720,7 @@ export default function Home() {
       </section>
 
       {/* 11. CONTACT SECTION */}
-      <section className="py-24 bg-[#F7F8FA]" id="contact-section-anchor">
+      <section className="py-24 bg-[#EEF3F8]" id="contact-section-anchor">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-stretch">
             
@@ -766,7 +766,7 @@ export default function Home() {
               {/* Structured Premium Map Mock Card */}
               <div className="bg-white rounded-xl border border-gray-200/60 shadow-sm overflow-hidden h-60 mt-8 relative flex items-center justify-center">
                 {/* Clean Blueprint/Grid styled Map Mock */}
-                <div className="absolute inset-0 bg-[#F7F8FA] flex flex-col items-center justify-center p-6 text-center border-b border-gray-100">
+                <div className="absolute inset-0 bg-[#F6F2EC] flex flex-col items-center justify-center p-6 text-center border-b border-gray-100">
                   {/* Grid background simulation */}
                   <div className="absolute inset-0 bg-[linear-gradient(to_right,#e5e7eb_1px,transparent_1px),linear-gradient(to_bottom,#e5e7eb_1px,transparent_1px)] bg-[size:24px_24px] opacity-25" />
                   
