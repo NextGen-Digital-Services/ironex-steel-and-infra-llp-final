@@ -52,27 +52,17 @@ export default function Home() {
           tagline: 'Clear the Existing. Prepare for What\'s Next.',
           services: [
             'Industrial Structure Dismantling',
-            'Steel Shed Dismantling',
-            'Warehouse Dismantling',
-            'Selective Demolition',
-            'Machinery & Equipment Dismantling',
-            'Structural Modification & Removal'
+            'Steel Shed & Warehouse Dismantling',
+            'Machinery & Equipment Dismantling'
           ]
         },
         {
           name: 'Industrial Scrap Management',
           tagline: 'Material Value, Managed Professionally.',
           services: [
-            'Ferrous Scrap Purchase',
-            'Non-Ferrous Scrap Purchase',
-            'Structural Steel Scrap',
-            'Machinery Scrap',
-            'Construction Scrap',
-            'Surplus & Obsolete Material',
-            'Scrap Segregation',
-            'Cutting & Downsizing',
-            'Periodic Scrap Management Contracts',
-            'Tender & Auction Procurement'
+            'Ferrous & Non-Ferrous Scrap Purchase',
+            'Surplus & Obsolete Materials',
+            'Periodic Contract Procurement'
           ]
         }
       ]
@@ -88,40 +78,18 @@ export default function Home() {
           name: 'Iron, Steel & Building Material Supply',
           tagline: 'Project-Ready Materials. Dependable Supply.',
           services: [
-            'Structural Steel',
-            'TMT Bars',
-            'Angles',
-            'Channels',
-            'Beams',
-            'Plates',
-            'Sheets',
-            'MS Pipes',
-            'GI Pipes',
-            'Hollow Sections',
-            'Roofing Sheets',
-            'Cement',
-            'Blocks',
-            'Welding Electrodes',
-            'Fasteners & Hardware',
-            'BOQ-Based Procurement',
-            'Bulk & Scheduled Supply'
+            'Structural Steel, TMT & Plates',
+            'Pipes, Sheets & Hollow Sections',
+            'Bulk & BOQ-Based Supply'
           ]
         },
         {
           name: 'Scaffolding, Formwork & Access Solutions',
           tagline: 'Reliable Access. Continuous Progress.',
           services: [
-            'Scaffolding Rental',
-            'Scaffolding Material Supply',
-            'Cuplock Scaffolding',
-            'H-Frame Scaffolding',
-            'Adjustable Props',
-            'Spans',
-            'Base Jacks',
-            'U-Head Jacks',
-            'Walkway Planks',
-            'Shuttering Plates',
-            'Couplers & Clamps'
+            'Scaffolding Rental & Supply',
+            'Cuplock & H-Frame Systems',
+            'Formwork & Shuttering Plates'
           ]
         }
       ]
@@ -137,52 +105,24 @@ export default function Home() {
           name: 'Structural Steel & Fabrication',
           tagline: 'Fabricated for Purpose. Built for Performance.',
           services: [
-            'Structural Steel Fabrication',
-            'Industrial Sheds',
-            'Warehouses',
-            'Mezzanine Floors',
-            'Platforms & Walkways',
-            'Machine Frames',
-            'Equipment Supports',
-            'Storage Racks',
-            'Gates & Custom Steel Work',
-            'On-Site Welding',
-            'Structural Repair & Modification',
-            'Fabrication According to Drawings & Measurements'
+            'Heavy Structural Steel Fabrication',
+            'Industrial Sheds & Warehouses'
           ]
         },
         {
           name: 'Construction & Redevelopment',
           tagline: 'From Cleared Ground to Working Asset.',
           services: [
-            'Industrial Construction',
-            'Warehouse Construction',
-            'Factory Extensions',
-            'Civil Foundations',
-            'PCC Work',
-            'RCC Work',
-            'Flooring',
-            'Masonry',
-            'Plastering',
-            'Compound Walls',
-            'Drainage',
-            'Yard Development',
-            'Structural Modifications',
-            'Renovation & Redevelopment',
-            'Civil Works Connected with Steel Structures'
+            'Industrial & Factory Construction',
+            'Civil Foundations & RCC Work'
           ]
         },
         {
           name: 'Industrial Project Support',
           tagline: 'Connected Support for Complex Sites.',
           services: [
-            'Project-Based Procurement',
-            'Site Material Coordination',
-            'Maintenance Fabrication',
-            'Structural Repairs',
-            'Contractor Support',
-            'Custom Industrial Requirements',
-            'Combined Supply & Execution'
+            'Site Coordination & Support',
+            'Contractor Support & Procurement'
           ]
         }
       ]
@@ -494,7 +434,7 @@ export default function Home() {
             <p className="text-sm text-gray-500 font-body leading-relaxed">Delivering complete industrial solutions from demolition and material recovery to structural fabrication, construction and project execution.</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <ServiceCard
                 key={index}
