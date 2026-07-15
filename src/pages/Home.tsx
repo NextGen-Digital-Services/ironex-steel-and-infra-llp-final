@@ -29,6 +29,8 @@ import { useModal } from '../context/ModalContext';
 import heroImg from '../assets/industrial_hero.jpg';
 import factoryImg from '../assets/about_factory.jpg';
 import pebImg from '../assets/peb_construction.jpg';
+import heroBgImg from '../assets/images/heroimg/heroimg1_result.webp';
+import heroCardImg from '../assets/images/heroimg/heroimg2_result.webp';
 import projectImg from '../assets/industrial_project.jpg';
 import demolitionImg from '../assets/demolition.jpg';
 import scaffoldingImg from '../assets/scaffolding.jpg';
@@ -248,12 +250,12 @@ export default function Home() {
         {/* Full-width industrial background image */}
         <div className="absolute inset-0 z-0">
           <img 
-            src={heroImg} 
+            src={heroBgImg} 
             alt="Structural Steel Fabrication Shop Floor" 
-            className="w-full h-full object-cover opacity-35" 
+            className="w-full h-full object-cover opacity-55" 
           />
           {/* Rich Corporate Navy Overlay */}
-          <div className="absolute inset-0 bg-primary/80 mix-blend-multiply" />
+          <div className="absolute inset-0 bg-primary/45 mix-blend-multiply" />
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-20 lg:py-32 w-full">
@@ -295,7 +297,7 @@ export default function Home() {
             <div className="lg:col-span-5 hidden lg:block">
               <div className="border-[6px] border-primary-light bg-primary-light rounded-xl overflow-hidden shadow-2xl relative aspect-[4/3] group">
                 <img 
-                  src={pebImg} 
+                  src={heroCardImg} 
                   alt="PEB Structure Framing" 
                   className="w-full h-full object-cover object-center group-hover:scale-103 transition-transform duration-500" 
                 />
