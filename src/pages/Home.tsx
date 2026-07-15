@@ -255,7 +255,7 @@ export default function Home() {
             className="w-full h-full object-cover opacity-55" 
           />
           {/* Rich Corporate Navy Overlay */}
-          <div className="absolute inset-0 bg-primary/45 mix-blend-multiply" />
+          <div className="absolute inset-0 bg-primary/25 mix-blend-multiply" />
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-20 lg:py-32 w-full">
