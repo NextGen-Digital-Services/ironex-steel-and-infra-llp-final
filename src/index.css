@@ -11,6 +11,40 @@
   --font-body: 'Inter', sans-serif;
 
   --radius-custom: 12px;
+
+  /* Typography Scale Overrides (+12.5% scale) */
+  --text-xs: clamp(0.825rem, 0.825rem + 0.05vw, 0.85rem);
+  --text-xs--line-height: 1.125rem;
+
+  --text-sm: clamp(0.96rem, 0.95rem + 0.1vw, 0.99rem);
+  --text-sm--line-height: 1.4rem;
+
+  --text-base: clamp(1.1rem, 1.08rem + 0.15vw, 1.13rem);
+  --text-base--line-height: 1.7rem;
+
+  --text-lg: clamp(1.26rem, 1.22rem + 0.2vw, 1.27rem);
+  --text-lg--line-height: 2rem;
+
+  --text-xl: clamp(1.4rem, 1.35rem + 0.25vw, 1.41rem);
+  --text-xl--line-height: 2rem;
+
+  --text-2xl: clamp(1.69rem, 1.62rem + 0.3vw, 1.7rem);
+  --text-2xl--line-height: 2.25rem;
+
+  --text-3xl: clamp(2.11rem, 2.0rem + 0.4vw, 2.12rem);
+  --text-3xl--line-height: 2.5rem;
+
+  --text-4xl: clamp(2.53rem, 2.4rem + 0.5vw, 2.55rem);
+  --text-4xl--line-height: 2.8rem;
+
+  --text-5xl: clamp(3.38rem, 3.1rem + 0.7vw, 3.4rem);
+  --text-5xl--line-height: 1.15;
+
+  --text-6xl: clamp(4.22rem, 3.8rem + 1.0vw, 4.25rem);
+  --text-6xl--line-height: 1.15;
+
+  --text-7xl: clamp(5.06rem, 4.5rem + 1.2vw, 5.1rem);
+  --text-7xl--line-height: 1.15;
 }
 
 @layer base {
