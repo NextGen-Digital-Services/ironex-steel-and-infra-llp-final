@@ -37,6 +37,7 @@ import card3Img from '../assets/images/Card3rdimg/card3_result.webp';
 import portCard1Img from '../assets/images/Card202/card1_result.webp';
 import portCard2Img from '../assets/images/Card202/card2_result.webp';
 import portCard3Img from '../assets/images/Card202/card3_result.webp';
+import chooseUsImg from '../assets/images/Card202/card11_result.webp';
 
 export default function Home() {
   const { setIsQuoteOpen } = useModal();
@@ -525,11 +526,10 @@ export default function Home() {
             <div className="lg:col-span-5 hidden lg:block">
               <div className="rounded-xl overflow-hidden shadow-lg border border-gray-100 bg-white relative">
                 <img 
-                  src={pebImg} 
+                  src={chooseUsImg} 
                   alt="Industrial construction framing steel structural check" 
                   className="w-full object-cover aspect-[3/4]"
                 />
-                <div className="absolute inset-0 bg-primary bg-opacity-20" />
               </div>
             </div>
 
