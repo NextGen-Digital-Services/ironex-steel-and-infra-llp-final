@@ -1,4 +1,4 @@
-import { MapPin, Calendar } from 'lucide-react';
+import { MapPin, CalendarDays, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 interface ProjectCardProps {
@@ -12,52 +12,60 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ image, name, location, category, year, path }: ProjectCardProps) {
   return (
-    <Link
-      to={path}
-      className="group block relative h-[420px] rounded-xl overflow-hidden border border-gray-200/60 bg-white shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 ease-out focus:outline-none"
-    >
-      {/* Project Image Container */}
-      <div className="absolute inset-0 w-full h-full overflow-hidden bg-primary">
+    <div className="group bg-white rounded-xl overflow-hidden border border-gray-200/60 flex flex-col h-full lg:min-h-[620px] md:min-h-[580px] min-h-0 shadow-sm hover:shadow-xl hover:-translate-y-[6px] transition-all duration-300 ease-out">
+      {/* Top Section: Project Image Only (Fixed Height for Aspect Ratio Consistency) */}
+      <div className="relative w-full h-[300px] overflow-hidden bg-primary shrink-0 rounded-t-xl">
         <img
           src={image}
           alt={name}
           className="w-full h-full object-cover transition-transform duration-300 ease-out group-hover:scale-105"
           loading="lazy"
         />
-        {/* Subtle premium dark gradient overlay (20-35%) */}
-        {/* We have a base gradient for readability and a subtle additional dark mask on hover */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/45 to-black/10 transition-all duration-300" />
-        <div className="absolute inset-0 bg-black/25 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       </div>
 
-      {/* Content permanently anchored at the bottom of the card */}
-      <div className="absolute bottom-0 left-0 right-0 p-6 flex flex-col z-10 text-left text-white">
-        {/* Category Label */}
-        <span className="text-[11px] font-bold uppercase tracking-widest text-secondary mb-1.5 block">
-          {category}
-        </span>
-        
-        {/* Orange Accent Line Animation */}
-        <div className="h-[2px] bg-secondary w-8 group-hover:w-16 transition-all duration-300 ease-out mb-3" />
+      {/* Bottom Section: Dedicated Content Area (Flex Layout for Aligned Button Placement) */}
+      <div className="flex flex-col flex-1 p-6 pb-7 bg-white text-left">
+        <div className="flex flex-col space-y-3">
+          {/* Category Label */}
+          <span className="text-[10px] font-extrabold uppercase tracking-widest text-secondary block">
+            {category}
+          </span>
+          
+          {/* Orange Accent Line Animation */}
+          <div className="h-[2px] bg-secondary w-8 group-hover:w-16 transition-all duration-300 ease-out" />
 
-        {/* Project Title */}
-        <h3 className="text-lg sm:text-xl font-bold font-heading line-clamp-2 leading-tight mb-4">
-          {name}
-        </h3>
-        
-        {/* Metadata section (Location and Year) */}
-        <div className="flex items-center justify-between text-[11px] font-semibold text-gray-300 pt-3.5 border-t border-white/10">
-          <div className="flex items-center gap-1.5">
-            <MapPin size={13} className="text-secondary shrink-0" />
-            <span className="line-clamp-1">{location}</span>
+          {/* Project Title (Fixed Area Height for Max 2 Lines & Equal Vert Alignment) */}
+          <div className="h-14 flex items-start">
+            <h3 className="text-lg font-bold text-primary font-heading line-clamp-2 leading-tight">
+              {name}
+            </h3>
           </div>
-          <div className="flex items-center gap-1.5 shrink-0">
-            <Calendar size={13} className="text-secondary shrink-0" />
-            <span>{year}</span>
+
+          {/* Information Section: Location + Completion Year (Lucide Icons) */}
+          <div className="space-y-2.5 pt-3.5 border-t border-gray-100 text-xs font-semibold text-gray-500 font-body">
+            <div className="flex items-center gap-2">
+              <MapPin size={14} className="text-secondary shrink-0" />
+              <span className="line-clamp-1">{location}</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <CalendarDays size={14} className="text-secondary shrink-0" />
+              <span>Completion Year: {year}</span>
+            </div>
           </div>
         </div>
+
+        {/* Spacer & View Project Button (Pushed to bottom of card via margin-top: auto) */}
+        <div className="mt-auto pt-6">
+          <Link
+            to={path}
+            className="inline-flex items-center justify-center gap-2 w-full h-[50px] bg-secondary hover:bg-primary text-white font-bold uppercase tracking-widest text-xs rounded-xl transition-all duration-300 focus:outline-none shadow-sm"
+          >
+            <span>VIEW PROJECT</span>
+            <ArrowRight size={14} className="transition-transform duration-300 group-hover:translate-x-1.5" />
+          </Link>
+        </div>
       </div>
-    </Link>
+    </div>
   );
 }
 
