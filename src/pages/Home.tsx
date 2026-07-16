@@ -1,11 +1,7 @@
 import { Link } from 'react-router-dom';
 import {
   Factory,
-  FlaskConical,
-  Zap,
   Boxes,
-  UtensilsCrossed,
-  Pill,
   Milestone,
   Car,
   ArrowRight,
@@ -166,11 +162,7 @@ export default function Home() {
 
   const industries = [
     { name: 'Manufacturing', icon: <Factory size={28} /> },
-    { name: 'Chemical & Pharma', icon: <FlaskConical size={28} /> },
-    { name: 'Power & Energy', icon: <Zap size={28} /> },
     { name: 'Warehousing & Logistics', icon: <Boxes size={28} /> },
-    { name: 'Food Processing', icon: <UtensilsCrossed size={28} /> },
-    { name: 'Pharma & Biotech', icon: <Pill size={28} /> },
     { name: 'Infrastructure & EPC', icon: <Milestone size={28} /> },
     { name: 'Automobile & Heavy Eng.', icon: <Car size={28} /> },
   ];
