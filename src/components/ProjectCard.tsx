@@ -1,4 +1,4 @@
-import { MapPin, Calendar, ArrowRight } from 'lucide-react';
+import { MapPin, Calendar } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 interface ProjectCardProps {
@@ -12,63 +12,52 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ image, name, location, category, year, path }: ProjectCardProps) {
   return (
-    <div className="bg-white rounded-xl overflow-hidden border border-gray-100 group relative flex flex-col h-[420px] shadow-sm hover:shadow-md transition-shadow duration-300">
-      {/* Project Image and Hover Overlay */}
-      <div className="relative w-full h-full overflow-hidden bg-primary flex-1">
+    <Link
+      to={path}
+      className="group block relative h-[420px] rounded-xl overflow-hidden border border-gray-200/60 bg-white shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 ease-out focus:outline-none"
+    >
+      {/* Project Image Container */}
+      <div className="absolute inset-0 w-full h-full overflow-hidden bg-primary">
         <img
           src={image}
           alt={name}
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          className="w-full h-full object-cover transition-transform duration-300 ease-out group-hover:scale-105"
           loading="lazy"
         />
-        {/* Default subtle gradient to ensure text readability */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-80 group-hover:opacity-0 transition-opacity duration-300" />
+        {/* Subtle premium dark gradient overlay (20-35%) */}
+        {/* We have a base gradient for readability and a subtle additional dark mask on hover */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/45 to-black/10 transition-all duration-300" />
+        <div className="absolute inset-0 bg-black/25 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+      </div>
 
-        {/* Static Info overlay at bottom (visible when NOT hovered) */}
-        <div className="absolute bottom-0 left-0 right-0 p-6 flex flex-col text-white group-hover:opacity-0 transition-opacity duration-300 pointer-events-none">
-          <span className="text-xs font-bold uppercase tracking-widest text-secondary mb-2">{category}</span>
-          <h3 className="text-xl font-bold font-heading line-clamp-1 mb-3">{name}</h3>
-          
-          <div className="flex items-center justify-between text-xs font-semibold text-gray-300">
-            <div className="flex items-center gap-1.5">
-              <MapPin size={14} className="text-secondary" />
-              <span>{location}</span>
-            </div>
-            <div className="flex items-center gap-1.5">
-              <Calendar size={14} className="text-secondary" />
-              <span>{year}</span>
-            </div>
+      {/* Content permanently anchored at the bottom of the card */}
+      <div className="absolute bottom-0 left-0 right-0 p-6 flex flex-col z-10 text-left text-white">
+        {/* Category Label */}
+        <span className="text-[11px] font-bold uppercase tracking-widest text-secondary mb-1.5 block">
+          {category}
+        </span>
+        
+        {/* Orange Accent Line Animation */}
+        <div className="h-[2px] bg-secondary w-8 group-hover:w-16 transition-all duration-300 ease-out mb-3" />
+
+        {/* Project Title */}
+        <h3 className="text-lg sm:text-xl font-bold font-heading line-clamp-2 leading-tight mb-4">
+          {name}
+        </h3>
+        
+        {/* Metadata section (Location and Year) */}
+        <div className="flex items-center justify-between text-[11px] font-semibold text-gray-300 pt-3.5 border-t border-white/10">
+          <div className="flex items-center gap-1.5">
+            <MapPin size={13} className="text-secondary shrink-0" />
+            <span className="line-clamp-1">{location}</span>
           </div>
-        </div>
-
-        {/* Hover State Corporate Overlay */}
-        <div className="absolute inset-0 bg-primary bg-opacity-95 flex flex-col justify-between p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-350 z-10">
-          <div>
-            <span className="text-xs font-bold uppercase tracking-widest text-secondary block mb-3">{category}</span>
-            <h3 className="text-2xl font-bold text-white font-heading leading-tight mb-4">{name}</h3>
-            
-            <div className="space-y-2 mt-6">
-              <div className="flex items-center gap-2.5 text-sm font-semibold text-gray-300">
-                <MapPin size={16} className="text-secondary shrink-0" />
-                <span>{location}</span>
-              </div>
-              <div className="flex items-center gap-2.5 text-sm font-semibold text-gray-300">
-                <Calendar size={16} className="text-secondary shrink-0" />
-                <span>Completion Year: {year}</span>
-              </div>
-            </div>
+          <div className="flex items-center gap-1.5 shrink-0">
+            <Calendar size={13} className="text-secondary shrink-0" />
+            <span>{year}</span>
           </div>
-
-          {/* Action Link */}
-          <Link
-            to={path}
-            className="inline-flex items-center justify-between w-full border border-secondary hover:bg-secondary text-white hover:text-white font-bold uppercase tracking-widest text-xs px-5 py-3.5 rounded-xl transition-all duration-300 mt-auto focus:outline-none"
-          >
-            <span>View Project</span>
-            <ArrowRight size={14} />
-          </Link>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
+

@@ -2,12 +2,14 @@ import { useState } from 'react';
 
 // Asset Imports
 import projectImg from '../assets/industrial_project.jpg';
-import heroImg from '../assets/industrial_hero.jpg';
 import pebImg from '../assets/peb_construction.jpg';
 import factoryImg from '../assets/about_factory.jpg';
 import demolitionImg from '../assets/demolition.jpg';
 import scaffoldingImg from '../assets/scaffolding.jpg';
 import scrapImg from '../assets/scrap_processing.jpg';
+import portCard1Img from '../assets/images/Card202/card1_result.webp';
+import portCard2Img from '../assets/images/Card202/card2_result.webp';
+import portCard3Img from '../assets/images/Card202/card3_result.webp';
 
 export default function Projects() {
   const [filter, setFilter] = useState('All');
@@ -20,7 +22,7 @@ export default function Projects() {
       location: 'Dahej Industrial SEZ, Gujarat',
       category: 'Steel Fabrication',
       year: '2025',
-      image: heroImg,
+      image: portCard1Img,
       client: 'Gujarat Chemical Enterprises Ltd.',
       scope: 'Fabrication of heavy process columns and supporting trusses (1,200 MT).',
       path: '/projects#process-plant',
@@ -31,7 +33,7 @@ export default function Projects() {
       location: 'Bhiwandi Logistics Hub, Maharashtra',
       category: 'Turnkey Construction',
       year: '2024',
-      image: projectImg,
+      image: portCard2Img,
       client: 'North Star Warehousing Parks',
       scope: 'Turnkey PEB engineering, foundation civil works, and cladding installation.',
       path: '/projects#peb-warehouse',
@@ -42,7 +44,7 @@ export default function Projects() {
       location: 'Trombay Power Complex, Mumbai',
       category: 'Demolition & Scrap',
       year: '2025',
-      image: demolitionImg,
+      image: portCard3Img,
       client: 'Sterling Power Grid Corp',
       scope: 'Controlled dismantling of obsolete coal handling sheds and scrap clearing.',
       path: '/projects#power-redevelopment',

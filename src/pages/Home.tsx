@@ -38,6 +38,9 @@ import scrapImg from '../assets/scrap_processing.jpg';
 import card1Img from '../assets/images/Card1stimg/Card1_result.webp';
 import card2Img from '../assets/images/Card2ndimg/card2_result.webp';
 import card3Img from '../assets/images/Card3rdimg/card3_result.webp';
+import portCard1Img from '../assets/images/Card202/card1_result.webp';
+import portCard2Img from '../assets/images/Card202/card2_result.webp';
+import portCard3Img from '../assets/images/Card202/card3_result.webp';
 
 export default function Home() {
   const { setIsQuoteOpen } = useModal();
@@ -140,7 +143,7 @@ export default function Home() {
       location: 'Dahej Industrial SEZ, Gujarat',
       category: 'Industrial Plants & Heavy Structures',
       year: '2025',
-      image: heroImg,
+      image: portCard1Img,
       path: '/projects#process-plant'
     },
     {
@@ -148,7 +151,7 @@ export default function Home() {
       location: 'Bhiwandi Logistics Hub, Maharashtra',
       category: 'PEB Warehouses & Material Supply',
       year: '2024',
-      image: projectImg,
+      image: portCard2Img,
       path: '/projects#peb-warehouse'
     },
     {
@@ -156,7 +159,7 @@ export default function Home() {
       location: 'Trombay Power Complex, Mumbai',
       category: 'Redevelopment & Scrap Management',
       year: '2025',
-      image: demolitionImg,
+      image: portCard3Img,
       path: '/projects#power-redevelopment'
     }
   ];
